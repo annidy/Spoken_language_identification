@@ -7,7 +7,6 @@ import librosa
 import numpy as np
 import sys
 import os
-from tqdm import tqdm
 from sklearn.metrics import accuracy_score
 
 
