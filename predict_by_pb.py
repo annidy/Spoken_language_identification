@@ -13,7 +13,7 @@ from sklearn.metrics import accuracy_score
 vocab = Vocab("vocab/vocab.txt")
 model = tf.saved_model.load('saved_models/lang14/pb/2/')
 
-
+print("gpus", gpus)
 def predict_wav(wav_path):
     signal, _ = librosa.load(wav_path, sr=16000)
     output, prob = model.predict_pb(signal)
